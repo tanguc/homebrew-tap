@@ -4,26 +4,26 @@
 class Monphare < Formula
   desc "Terraform/OpenTofu module constraint analyzer and dependency mapper"
   homepage "https://github.com/tanguc/monphare"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tanguc/monphare/releases/download/v#{version}/monphare-darwin-aarch64.tar.gz"
-      sha256 "b726eb7c9e86efbdfd7545514b00d956f5a8a32f0b5d3cb180b0c33bf892515b"
+      sha256 "2f5fecae3e6d365cc1b8de494081f1eb7da055d3aebacb4d63bb481b46936ba9"
     else
       url "https://github.com/tanguc/monphare/releases/download/v#{version}/monphare-darwin-x86_64.tar.gz"
-      sha256 "6e2d2df2d69a0eef64e405712db18963256c46ad823cff51b2807e9c8b10815e"
+      sha256 "df9a378ce3f12a64cd1120aec94dee2a87535d32b89fad932eb9fd0f2c00cc2f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/tanguc/monphare/releases/download/v#{version}/monphare-linux-aarch64.tar.gz"
-      sha256 "ae071d9e3c7947d104f419f138a7d0161830fa4ba16f203ec9fc96049a414b31"
+      sha256 "3ed939791030493b965a8ddc399970a7a074e852860c62cba7202fee3a09d613"
     else
       url "https://github.com/tanguc/monphare/releases/download/v#{version}/monphare-linux-x86_64.tar.gz"
-      sha256 "a90e85067ce7e3398d669d9968a845841b9ad3eabe035ff0e68cea4a48b5e665"
+      sha256 "511ad1937c3aad03cf00e867f09f5ff2b6aaa2f9275aa3f0055962dd1aff0dba"
     end
   end
 
